@@ -1,0 +1,2 @@
+output_dir: outputs/
+max_epochs: 2000
