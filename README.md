@@ -17,14 +17,21 @@ A modular, high-performance **Graph Neural Network (GNN)** classifier using **Py
 
 ```
 .
-├── main.py             # Entry point: training / tuning / evaluation
-├── dataloader.py       # Loads features, labels, creates edge indices
-├── models.py           # Autoencoder and dynamic GNN models
-├── trainer.py          # Training loop and early stopping
-├── tuner.py            # Optuna-based hyperparameter tuning
-├── evaluator.py        # Testing + confusion matrix visualization
-├── utils.py            # Helper functions (AE training, edge gen)
-├── outputs/            # Stores loss curves, confusion matrices
+├──Graph_Classification
+    ├── config
+      ├── config.yaml       # Configuration file
+    ├── data
+      ├── dataloader.py       # Loads features, labels, creates edge indices
+    ├── models           
+      ├── model.py           # Autoencoder and dynamic GNN models
+    ├── training           
+      ├── trainer.py          # Training loop and early stopping
+      ├── tuner.py            # Optuna-based hyperparameter tuning
+      ├── evaluator.py        # Testing + confusion matrix visualization
+    ├── utils
+      ├── utils.py            # Helper functions (AE training, edge gen)
+    ├── main.py             # Entry point: training / tuning / evaluation
+├──Updated_MOGCN
 └── README.md           # You're here!
 ```
 
